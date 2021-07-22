@@ -1,14 +1,15 @@
-x = input("guess a number between 1-10")
 import random
+x = int(input("guess a number between 1-10"))
 y = random.randint(1,10) 
-print(y)
-
+if x != y :
+    print("wrong")
+else:
+    print("right")
 
 while x != y:   
     print( "try again")
-    x = input("guess a number between 1-10")
-    import random
-    y = random.randint(1,10) 
-   
-    if x == y:
-        print("your right")
+    x = int(input("guess a number between 1-10"))
+    if x != y :
+        print("wrong")
+    else:
+        print("right")
